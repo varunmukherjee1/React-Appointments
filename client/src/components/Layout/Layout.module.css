@@ -1,0 +1,154 @@
+.layout {
+    display: flex;
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFCEF;
+    gap: 20px;
+}
+
+.card {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.sidebar {
+    /* width: 250px; */
+    width: auto;
+    color: white;
+    background-color: #393939;
+    height: calc(100vh - 2rem);
+    display: flex;
+    flex-direction: column;
+    padding: 1.4rem;
+    padding-top: 4.5rem;
+}
+
+.sidebar-active {
+    min-width: 250px;
+    padding-top: 1.4rem;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 2rem);
+    width: 100%;
+    gap: 20px;
+}
+
+.header {
+    height: 11%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.info a {
+    color: #393939;
+    text-decoration: none;
+}
+
+.body {
+    height: 86%;
+    overflow-y: scroll;
+}
+
+.body::-webkit-scrollbar{
+    display: none;
+}
+
+.sidebar-header {
+    margin-bottom: 3.2rem;
+}
+
+.sidebar-menus {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+.menu-item {
+    width: 100%;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    /* text-align: center; */
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item i {
+    margin-right: 8px;
+}
+
+.active-menu-item {
+    /* background-color: #393939; */
+    background-color: #D2EBCD;
+    color: #393939;
+}
+
+.active-menu-item a {
+    
+    color: #393939;
+}
+
+.sidebar-switch {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #393939;
+}
+
+.notifications {
+    position: relative;
+}
+
+.notif-count {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    transform: translate(50%,-50%);
+    font-size: 1rem;
+    background-color: #FF7F5B;
+    height: 1.2rem;
+    width: 1.2rem;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+@media (max-width: 700px){
+    .sidebar {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media (max-width: 400px){
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar-active {
+        display: block;
+        min-width: 250px;
+    }
+}

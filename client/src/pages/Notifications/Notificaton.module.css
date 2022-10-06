@@ -1,0 +1,59 @@
+.mainHeading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.header {
+    border-bottom: 2px solid #eee;
+    margin-bottom: 1rem;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+}
+
+.header li {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.header li.active {
+    color: #FF7F5B;
+    border-bottom: 3px solid #FF7F5B;
+    /* border-radius: 5px; */
+}
+
+.notif-action {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.5rem;
+}
+
+.notif-action p {
+    background-color: #FF7F5B;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.notif-action p:hover {
+    background-color: #ff673d;
+}
+
+.notif-message {
+    padding: 1rem;
+    /* border: 2px solid #393939; */
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    margin-bottom: 0.8rem;
+    /* background-color: #D2EBCD; */
+    cursor: pointer;
+}
