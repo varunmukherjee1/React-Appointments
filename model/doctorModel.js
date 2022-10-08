@@ -5,6 +5,14 @@ const doctorSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    userId: {
+        type: String,
+        required: true
+    },
+    status: {
+        type: String,
+        required: true
+    },
     phoneNumber: {
         type: String,
         required: true

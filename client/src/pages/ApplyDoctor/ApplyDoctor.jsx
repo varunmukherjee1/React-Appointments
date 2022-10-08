@@ -49,8 +49,11 @@ function ApplyDoctor() {
                 specialization,
                 experience,
                 feePerConsultation,
-                token: localStorage.getItem("token"),
                 timings: [fromTime,toTime]
+            },{
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem("token")}`
+                }
             })
 
             dispatch(loadingActions.hideLoading())

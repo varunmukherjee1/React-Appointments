@@ -121,10 +121,10 @@ router.post("/get-user-info-by-id" ,authMiddleware, async (req,res) => {
 
 })
 
-router.post("/apply-doctor-account", async (req,res) => {
+router.post("/apply-doctor-account",authMiddleware, async (req,res) => {
     try {
 
-        const newDoc = new Doctor({...req.body,status: "pending"});
+        const newDoc = new Doctor({...req.body, status: "pending"});
         newDoc.save();
 
         const userAdmin = await User.findOne({isAdmin: true});

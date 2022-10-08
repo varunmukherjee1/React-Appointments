@@ -1,0 +1,72 @@
+.table{
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.table thead {
+    background-color: #393939;
+    color: white;
+    border-radius: 5px;
+}
+
+.table td,
+.table th {
+    /* border: 2px solid black; */
+    padding: 0.5rem 1rem;
+}
+
+.thead th:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.thead th:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.table button {
+    border: none;
+    background: none;
+    font-weight: 600;
+    background-color: #FF7F5B;
+    border-radius: 5px;
+    padding: 0.3rem 0.6rem;
+    /* opacity: 0; */
+}
+
+.tbody tr:hover {
+    background-color: #D2EBCD;
+}
+
+.tbody tr:hover button {
+    /* opacity: 1; */
+}
+
+/* .table td:last-child{
+    text-align: center;
+} */
+
+.navigation {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 0.8rem; */
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.navigation p {
+    margin: 0;
+}
+
+.navigation button {
+    border: none;
+    font-weight: bold;
+    background: none;
+    font-size: 1.2rem;
+    background-color: #FF7F5B;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+}
+

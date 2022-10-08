@@ -34,12 +34,18 @@ router.get("/get-all-users",authMiddleware,async (req,res) => {
 
         const users = await User.find({})
 
+        users.forEach((user) => {
+            user.password = undefined;
+        })
+
+        reqUsers = users.filter((val) => (!val.isAdmin))
+
         res
             .status(200)
             .send({
                 success: true,
                 message: "Successfully fetched users",
-                data: users
+                data: reqUsers
             })
     }
     catch(err){
